@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1bd85ec37615556f9dbc",
+    "revision": "1f416ca93249327c3e3d",
     "url": "/tuql/css/app.851cc563.css"
   },
   {
@@ -8,12 +8,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tuql/css/chunk-vendors.54bcddb4.css"
   },
   {
-    "revision": "f8d42d606f567fd136462c5c179d753b",
+    "revision": "938073bea1f881eb9d97947e13ee4836",
     "url": "/tuql/index.html"
   },
   {
-    "revision": "1bd85ec37615556f9dbc",
-    "url": "/tuql/js/app.ee6aeed8.js"
+    "revision": "1f416ca93249327c3e3d",
+    "url": "/tuql/js/app.615c400a.js"
   },
   {
     "revision": "83a9f3072a140d159afa",

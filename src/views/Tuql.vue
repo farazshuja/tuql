@@ -2,10 +2,7 @@
   <div class="tuql">
     <div class="row g-3 align-items-center my-1">
       <div class="col-auto">
-        <label class="col-form-label">Initials:</label>
-      </div>
-      <div class="col-auto">
-        <input v-model="search" type="text" class="form-control">
+        <input v-model="search" type="text" class="form-control" placeholder="type initial letters as buckwalter">
       </div>
       <div class="col-auto">
         <button type="button" class="btn btn-primary" @click="onSearch">Search</button>
@@ -73,6 +70,7 @@ export default defineComponent({
   .tuql {
     max-width: 1800px;
   }
+
   #adobe-dc-view {
     height: calc(100vh - 70px);
   }
