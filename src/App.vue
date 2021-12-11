@@ -1,9 +1,9 @@
 <template>
-  <div id="nav">
+  <div id="nav" class="container">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/tuql">Tuql</router-link>
   </div>
-  <router-view/>
+  <router-view class="container"/>
 </template>
 
 <style lang="scss">
@@ -16,8 +16,7 @@
 }
 
 #nav {
-  padding: 30px;
-
+  text-align: right;
   a {
     font-weight: bold;
     color: #2c3e50;
