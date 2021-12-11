@@ -33,11 +33,12 @@ export default defineComponent({
   },
   methods: {
     loadPdf () {
-      const vm = this
-      // document.addEventListener('adobe_dc_view_sdk.ready', function () {
-      //   debugger;
-      // @ts-ignore
-      var adobeDCView = new AdobeDC.View({ clientId: '170e385dc8634478921015e0fed7fd0b', divId: 'adobe-dc-view' })
+      if (!(window as any).AdobeDC) {
+        setTimeout(this.loadPdf, 1000)
+        return
+      }
+
+      var adobeDCView = new (window as any).AdobeDC.View({ clientId: '170e385dc8634478921015e0fed7fd0b', divId: 'adobe-dc-view' })
       const previewFilePromise = adobeDCView.previewFile({
         content: {
           location: {
@@ -48,10 +49,9 @@ export default defineComponent({
       })
 
       previewFilePromise.then((adobeViewer) => {
-        vm.adobeViewer = adobeViewer
-        vm.onSearch()
+        this.adobeViewer = adobeViewer
+        this.onSearch()
       })
-      // })
     },
     onSearch () {
       if (!this.adobeViewer) {

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tuql/precache-manifest.d8fcad1efa6ea03a1b6df99fa8e7be2a.js"
+  "/tuql/precache-manifest.3136ccae7d78bec7d18afd059a4de134.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "quran-dictionary"});
