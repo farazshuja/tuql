@@ -42,7 +42,7 @@ export default defineComponent({
       const previewFilePromise = adobeDCView.previewFile({
         content: {
           location: {
-            url: 'http://unirazz.com/tuql.pdf'
+            url: 'https://unirazz.com/tuql.pdf'
           }
         },
         metaData: { fileName: 'tuql.pdf' }
