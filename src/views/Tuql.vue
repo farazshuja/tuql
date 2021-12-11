@@ -1,6 +1,6 @@
 <template>
   <div class="tuql">
-    <div class="row g-3 align-items-center">
+    <div class="row g-3 align-items-center my-1">
       <div class="col-auto">
         <label class="col-form-label">Initials:</label>
       </div>
@@ -37,7 +37,7 @@ export default defineComponent({
       // document.addEventListener('adobe_dc_view_sdk.ready', function () {
       //   debugger;
       // @ts-ignore
-      var adobeDCView = new AdobeDC.View({ clientId: 'abd4710beeea4202a3b61d04ef73e1a4', divId: 'adobe-dc-view' })
+      var adobeDCView = new AdobeDC.View({ clientId: '170e385dc8634478921015e0fed7fd0b', divId: 'adobe-dc-view' })
       const previewFilePromise = adobeDCView.previewFile({
         content: {
           location: {
