@@ -693,12 +693,11 @@ export const tuqlData = [
 const letters = 'abtvjHxd*rzs$SDTZegfkqlmnwhy'
 
 export const getPageByString = (str = ''): number => {
-  const strLC = str.toLowerCase()
-  const result = tuqlData.find((d) => d.startsWith(strLC))
+  const result = tuqlData.find((d) => d.startsWith(str))
   if (result) {
     return Number(result.split(':')[1]) || 1
   }
-  if (str.length <= 2) {
+  if (str.length <= 1) {
     return 1
   }
   // else case
